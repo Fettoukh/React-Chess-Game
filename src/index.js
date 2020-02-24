@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Switch } from 'react-router';
+import { HashRouter, Route } from 'react-router-dom';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import darkTheme from './themes/dark';
+import lightTheme from './themes/light';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import GameView from './components/GameView';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const GlobalStyle = createGlobalStyle`
+    body {
+        margin: 0;
+        background: ${props => props.theme.background1};
+    }
+`;
+
+ReactDOM.render(
+    <ThemeProvider theme={darkTheme}>
+        <div>
+            <GlobalStyle />
+            <HashRouter>
+                <Switch>
+                    <Route path="/" component={GameView} />
+                </Switch>
+            </HashRouter>
+        </div>
+    </ThemeProvider>,
+    document.getElementById('root')
+);
