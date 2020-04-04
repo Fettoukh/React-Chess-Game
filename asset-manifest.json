@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/React-Chess-Game/static/js/main.a353daea.chunk.js",
+    "main.js.map": "/React-Chess-Game/static/js/main.a353daea.chunk.js.map",
+    "runtime-main.js": "/React-Chess-Game/static/js/runtime-main.dc7c566d.js",
+    "runtime-main.js.map": "/React-Chess-Game/static/js/runtime-main.dc7c566d.js.map",
+    "static/js/2.c30f9bf4.chunk.js": "/React-Chess-Game/static/js/2.c30f9bf4.chunk.js",
+    "static/js/2.c30f9bf4.chunk.js.map": "/React-Chess-Game/static/js/2.c30f9bf4.chunk.js.map",
+    "index.html": "/React-Chess-Game/index.html",
+    "precache-manifest.bd1c43201f5a9602cf3b6f6e2becbcd8.js": "/React-Chess-Game/precache-manifest.bd1c43201f5a9602cf3b6f6e2becbcd8.js",
+    "service-worker.js": "/React-Chess-Game/service-worker.js",
+    "static/js/2.c30f9bf4.chunk.js.LICENSE.txt": "/React-Chess-Game/static/js/2.c30f9bf4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc7c566d.js",
+    "static/js/2.c30f9bf4.chunk.js",
+    "static/js/main.a353daea.chunk.js"
+  ]
+}
